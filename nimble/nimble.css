@@ -1,0 +1,164 @@
+/*
+nimble.css 
+
+created by Alex Weininger
+ */
+
+body
+{
+	background-color: #b5ffbc;
+}
+/*
+
+ */
+.nodebutton
+{
+	background-color: #b5ffbc;
+	border: 2px solid rgb(51, 51, 51);
+	color: rgb(51, 51, 51);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 15px;
+	border-radius: 7px;
+	padding: 7px;
+	text-decoration: none;
+}
+/*
+
+ */
+.nodebutton:hover
+{
+	background-color: rgb(51, 51, 51);
+	border: 1px solid rgb(51, 51, 51);
+	border: 2px solid rgb(51, 51, 51);
+	color: #b5ffbc;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 15px;
+	border-radius: 7px;
+	padding: 7px;
+	text-decoration: none;
+}
+/*
+
+ */
+.container
+{
+	margin: 15px;
+	padding: 7px;
+}
+/*
+
+ */
+.text
+{
+	color: rgb(51, 51, 51);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+/*
+
+ */
+.navbar
+{
+	margin-top: 5px;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*
+
+ */
+.textbox
+{
+	border: solid;
+	border-color: rgb(51, 51, 51);
+	border-width: 2px;
+	border-radius: 7px;
+	padding: 15px;
+	padding-top: 0px;
+}
+/*
+
+ */
+.title
+{
+	color: rgb(51, 51, 51);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+}
+/*
+
+ */
+.nodeinput
+{
+	background-color: #b5ffbc;
+	border: 2px solid rgb(51, 51, 51);
+	color: rgb(51, 51, 51);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 15px;
+	border-radius: 7px;
+	padding: 7px;
+	text-decoration: none;
+}
+/*
+
+ */
+.nodebutton-inverted
+{
+	background-color: rgb(51, 51, 51);
+	border: 2px solid rgb(51, 51, 51);
+	color: #b5ffbc;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 15px;
+	border-radius: 7px;
+	padding: 7px;
+	text-decoration: none;
+}
+/*
+
+ */
+.nodebutton-inverted:hover
+{
+	background-color: #b5ffbc;
+	border: 2px solid rgb(51, 51, 51);
+	color: rgb(51, 51, 51);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	margin: 15px;
+	border-radius: 7px;
+	padding: 7px;
+	text-decoration: none;
+}
+/*
+
+ */
+.bigtitle
+{
+	background-color: #b5ffbc;
+	border: none;
+	border-color: rgb(51, 51, 51);
+	display: inline;
+	margin: 5px;
+	border-radius: 7px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+/*
+
+ */
+.picbox
+{
+	border: solid;
+	border-color: rgb(51, 51, 51);
+	border-width: 2px;
+	display: inline-block;
+	border-radius: 7px;
+	padding: 15px;
+}
+/*
+
+ */
