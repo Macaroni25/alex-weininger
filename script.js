@@ -24,5 +24,5 @@ function clickCon() {
     document.getElementById('projects').className = "";
     document.getElementById('about').className = "";
     document.getElementById('contact').className = "active";
-    window.location.href = "#sdsdsdsdsdsdsdsdsdsdsd";
+    window.location.href = "#contact";
 }
