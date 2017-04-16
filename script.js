@@ -29,9 +29,12 @@ function clickCon() {
 
 // game object
 
-function person(title, description, link, thumbnail){
+function Game(title, description, link, thumbnail){
     this.title = title;
     this.description = description;
     this.link = link;
     this.thumbnail = thumbnail;
 }
+mario = new Game ("Super Mario Bros", "a classic mario game", "mario.html", "images/mario.png");
+
+alert(mario.title);
