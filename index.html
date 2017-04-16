@@ -56,7 +56,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other pages<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="BensPage.html">Ben's Page</a></li>
-              <li><a href="#">Another action</a></li>
+              <li><a href="games/testgame.html">Test Game</a></li>
               <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
               <li class="dropdown-header">Admin pages</li>
@@ -121,7 +121,7 @@
               <li class="media">
                 <div class="media-left">
                   <a href="#">
-                    <img class="media-object" src="..." alt="...">
+                    <img class="media-object" src="" alt="...">
                   </a>
                 </div>
                 <div class="media-body">
@@ -199,6 +199,20 @@
 
   </div>
   <!-- /container -->
+
+      <form id="newGame">
+        Title:<br>
+        <input type="text" id="title">
+        <br> Desciption:<br>
+        <input type="text" id="description">
+        <br> Link:<br>
+        <input type="text" id="link">
+        <br><br>
+        <button onclick="addGame()">Submit</button>
+    </form>
+
+    <p>Games:</p>
+    <p id="gamelist"></p>
 
 
   <!-- END BODY  -->

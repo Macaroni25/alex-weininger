@@ -29,7 +29,7 @@ function clickCon() {
 
 // game object
 
-function Game(title, description, link, thumbnail){
+function Game(title, description, link, thumbnail) {
     this.title = title;
     this.description = description;
     this.link = link;
@@ -37,13 +37,16 @@ function Game(title, description, link, thumbnail){
 }
 var games = new Array;
 
-games[0] = new Game ("Super Mario Bros", "a classic mario game", "mario.html", "images/mario.png");
+games[0] = new Game("Super Mario Bros", "a classic mario game", "mario.html", "images/mario.png");
 
-alert(games[0].title);
-
-function addGame(){
-    getElementById("title").title;
+function addGame() {
+    games[games.length] = new Game(document.getElementById("title").value.toString(), document.getElementById("description").value.toString(), document.getElementById("link").value.toString(), "...");
+    printGames();
 }
-
-
+function printGames(){
+    for (var i = 0; i < games.length; i++){
+        console.log(games[i].title + " " + games[i].description + " " + games[i].link);
+        document.getElementById("gamelist").innerHTML += "<br>" + games[i].title + " " + games[i].description + " " + games[i].link;
+    }
+}
 
