@@ -26,3 +26,12 @@ function clickCon() {
     document.getElementById('contact').className = "active";
     window.location.href = "#contact";
 }
+
+// game object
+
+function person(title, description, link, thumbnail){
+    this.title = title;
+    this.description = description;
+    this.link = link;
+    this.thumbnail = thumbnail;
+}
