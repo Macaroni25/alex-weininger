@@ -35,6 +35,15 @@ function Game(title, description, link, thumbnail){
     this.link = link;
     this.thumbnail = thumbnail;
 }
-mario = new Game ("Super Mario Bros", "a classic mario game", "mario.html", "images/mario.png");
+var games = new Array;
 
-alert(mario.title);
+games[0] = new Game ("Super Mario Bros", "a classic mario game", "mario.html", "images/mario.png");
+
+alert(games[0].title);
+
+function addGame(){
+    getElementById("title").title;
+}
+
+
+
