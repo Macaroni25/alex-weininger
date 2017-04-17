@@ -16,7 +16,7 @@
   <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
   <!-- Custom scripts -->
-  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,10 +30,7 @@
   <!-- BODY  -->
 
   <div class="spacer"></div>
-
-  <!-- Fixed navbar -->
-
-  <nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -48,10 +45,10 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">Games</a></li>
-          <li><a href="#contact">Projects</a></li>
-          <li><a href="#contact">About</a></li>
-          <li><a href="#contact">Contact us</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other pages<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -74,10 +71,7 @@
       <!--/.nav-collapse -->
     </div>
   </nav>
-
-  <!-- END NAVBAR -->
-
-  <div class="jumbotron">
+  <div id="home" class="jumbotron">
     <div class="container">
       <h1>Hello, world!</h1>
       <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron
@@ -103,8 +97,7 @@
                 </div>
                 <div class="media-body">
                   <h4 class="media-heading">Mario</h4>
-                  <a class="btn btn-default" href="mario" role="button">Link</a>
-                  Super Mario Bros.
+                  <a class="btn btn-default" href="mario" role="button">Link</a> Super Mario Bros.
                 </div>
               </li>
             </ul>
@@ -161,7 +154,7 @@
 
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron" id="">
-      <h1 name="home">Navbar example</h1>
+      <h1 id="games">Games</h1>
       <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the
         responsive CSS and HTML, so it also adapts to your viewport and device.</p>
       <p>To see the difference between static and fixed top navbars, just scroll.</p>
@@ -170,7 +163,7 @@
       </p>
     </div>
     <div class="jumbotron">
-      <h1 name="projects">Projects</h1>
+      <h1 id="projects">Projects</h1>
       <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the
         responsive CSS and HTML, so it also adapts to your viewport and device.</p>
       <p>To see the difference between static and fixed top navbars, just scroll.</p>
@@ -178,8 +171,8 @@
         <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
       </p>
     </div>
-    <div class="jumbotron" id="about">
-      <h1 name="about">About</h1>
+    <div class="jumbotron" id="">
+      <h1 id="about">About</h1>
       <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the
         responsive CSS and HTML, so it also adapts to your viewport and device.</p>
       <p>To see the difference between static and fixed top navbars, just scroll.</p>
@@ -187,8 +180,8 @@
         <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
       </p>
     </div>
-    <div class="jumbotron" id="contact">
-      <h1 name="contact">Contact</h1>
+    <div class="jumbotron" id="">
+      <h1 id="contact">Contact</h1>
       <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the
         responsive CSS and HTML, so it also adapts to your viewport and device.</p>
       <p>To see the difference between static and fixed top navbars, just scroll.</p>
@@ -200,19 +193,19 @@
   </div>
   <!-- /container -->
 
-      <form id="newGame">
-        Title:<br>
-        <input type="text" id="title">
-        <br> Desciption:<br>
-        <input type="text" id="description">
-        <br> Link:<br>
-        <input type="text" id="link">
-        <br><br>
-        <button onclick="addGame()">Submit</button>
-    </form>
+  <form id="newGame">
+    Title:<br>
+    <input type="text" id="title">
+    <br> Desciption:<br>
+    <input type="text" id="description">
+    <br> Link:<br>
+    <input type="text" id="link">
+    <br><br>
+    <button onclick="addGame()">Submit</button>
+  </form>
 
-    <p>Games:</p>
-    <p id="gamelist"></p>
+  <p>Games:</p>
+  <p id="gamelist"></p>
 
 
   <!-- END BODY  -->
@@ -224,6 +217,10 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
     crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
 
 
 </body>

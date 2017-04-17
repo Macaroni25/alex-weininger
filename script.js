@@ -1,31 +1,4 @@
-function clickHome() {
-    document.getElementById('home').className = "active";
-    document.getElementById('projects').className = "";
-    document.getElementById('about').className = "";
-    document.getElementById('contact').className = "";
-    window.location.href = "#";
-}
-function clickProjects() {
-    document.getElementById('home').className = "";
-    document.getElementById('projects').className = "active";
-    document.getElementById('about').className = "";
-    document.getElementById('contact').className = "";
-    window.location.href = "#projects";
-}
-function clickAbout() {
-    document.getElementById('home').className = "";
-    document.getElementById('projects').className = "";
-    document.getElementById('about').className = "active";
-    document.getElementById('contact').className = "";
-    window.location.href = "#about";
-}
-function clickCon() {
-    document.getElementById('home').className = "";
-    document.getElementById('projects').className = "";
-    document.getElementById('about').className = "";
-    document.getElementById('contact').className = "active";
-    window.location.href = "#contact";
-}
+
 
 // game object
 
@@ -43,8 +16,8 @@ function addGame() {
     games[games.length] = new Game(document.getElementById("title").value.toString(), document.getElementById("description").value.toString(), document.getElementById("link").value.toString(), "...");
     printGames();
 }
-function printGames(){
-    for (var i = 0; i < games.length; i++){
+function printGames() {
+    for (var i = 0; i < games.length; i++) {
         console.log(games[i].title + " " + games[i].description + " " + games[i].link);
         document.getElementById("gamelist").innerHTML += "<br>" + games[i].title + " " + games[i].description + " " + games[i].link;
     }
