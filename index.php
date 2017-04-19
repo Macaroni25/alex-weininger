@@ -1,4 +1,3 @@
-<?
-header("Location: http://example.com/myOtherPage.php");
-die();
-?>
+<script>
+    window.location = "./portfolio/index.html";
+    </script>
