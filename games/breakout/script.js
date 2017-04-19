@@ -53,6 +53,7 @@ function mouseMoveHandler(e) {
     if(relativeX > 0 && relativeX < canvas.width) {
         paddleX = relativeX - paddleWidth/2;
     }
+    //console.log(e.clientX + ", " + relativeX);
 }
 function collisionDetection() {
     for(c=0; c<brickColumnCount; c++) {
@@ -124,19 +125,21 @@ function draw() {
     drawLives();
     collisionDetection();
     
-    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
-        dx = -dx;
+    //console.log("Balls x: " + x + " Balls y: " + y);
+
+    if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) { // collision with side wall
+        dx = -dx; // change the direction of the balls x-speed
     }
-    if(y + dy < ballRadius) {
-        dy = -dy;
+    if(y + dy < ballRadius) { // if the ball hits the top wall
+        dy = -dy; // change the direction of the balls y-speed
     }
-    else if(y + dy > canvas.height-ballRadius) {
-        if(x > paddleX && x < paddleX + paddleWidth) {
+    else if(y + dy > canvas.height-ballRadius) { // if the ball reaches the floor
+        if(x > paddleX && x < paddleX + paddleWidth) { // if the balls x is within the paddle's x
             dy = -dy;
         }
         else {
             lives--;
-            if(!lives) {
+            if(lives == 0) {
                 alert("GAME OVER");
                 document.location.reload();
             }
